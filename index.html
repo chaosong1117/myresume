@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>王朝松的履歷</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#point1").click(function () {
+          $("#photo1").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point1").css("background-color", "lightseagreen");
+          $("#point2").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point2").click(function () {
+          $("#photo2").fadeIn();
+          $("#photo1").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point2").css("background-color", "lightseagreen");
+          $("#point1").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point3").click(function () {
+          $("#photo3").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo1").fadeOut();
+
+          $("#point3").css("background-color", "lightseagreen");
+          $("#point2").css("background-color", "white");
+          $("#point1").css("background-color", "white");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <div id="photo">
+        <img src="photo-1.jpg" width="238" height="244" id="photo1" />
+        <img src="photo-2.jpg" width="238" height="244" id="photo2" />
+        <img src="photo-3.jpg" width="238" height="244" id="photo3" />
+        <div class="point" id="point1"></div>
+        <div class="point" id="point2"></div>
+        <div class="point" id="point3"></div>
+      </div>
+      <div id="intro">
+        <h1>王朝松</h1>
+        <h2>22 歲</h2>
+        <h2>應屆畢業生</h2>
+        <h2>桃園</h2>
+        <h3>接受過去的你，喜歡現在的自己</h3>
+      </div>
+      <div id="about">
+        <h4><i class="fas fa-user-circle"></i> 關於我</h4>
+        <p>
+          大家好，我是王朝松，商務科技管理系畢業。那平常的興趣是聽音樂，好的歌曲可以讓我補充工作所需的能量。那我平常的時候會自學程式，學的面向為數據分析以及資料科學，那也希望未來也可以往這個領域做發展。
+        </p>
+        <h4>工作經歷</h4>
+        <ul>
+          <li>Python助理工程師</li>
+        </ul>
+        <h4>社群連結</h4>
+        <ul>
+          <li><a href="https://github.com/chaosong1117">github</a></li>
+          <li><a href="https://pda.104.com.tw/profile/edit?vno=75iw1omgc">104人力銀行</a></li>
+          <li><a href="https://www.cakeresume.com/dashboard">cakeresume</a></li>
+        </ul>
+      </div>
+      <div id="other">
+        <h4>個性</h4>
+        <div class="block">
+          <div class="left-text">內向</div>
+          <div class="right-text">外向</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">理性</div>
+          <div class="right-text">感性</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">警慎</div>
+          <div class="right-text">冒險</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar2"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">思考</div>
+          <div class="right-text">行動</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar2"></div>
+        </div>
+        <h4>技能</h4>
+        <div class="block">
+          <div class="left-text">Python</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar5"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">SQL</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar5"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">R</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar5"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">JavaScript</div>
+          <div class="gray-bar"></div>
+          <div class="green-bar" id="green-bar5"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
